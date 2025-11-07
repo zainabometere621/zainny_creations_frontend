@@ -1,1 +1,14 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss"; */
+
+/* 1. Google fonts - must come FIRST */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* 2. Tailwind import */
 @import "tailwindcss";
+
+/* 3. Tailwind v4 theme extensions */
+@theme {
+  --font-playfair: "Playfair Display", serif;
+  --font-poppins: "Poppins", sans-serif;
+}
