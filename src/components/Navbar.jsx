@@ -5,9 +5,9 @@ import profileicon from "../assets/profile-icon.png"
 
 export default function Navbar() {
   return(
-    <nav className="flex justify-center items-center gap-26 w-full h-16  bg-blue-300">
+    <nav className="flex justify-center items-center gap-26 w-full h-16  bg-white shadow-xl ">
       <div>
-        <h1 className=" text-[#D4AF37] font-playfair text-2xl font-extrabold">Zainny Creations</h1>
+        <h1 className=" text-[#D4AF37] font-playfair text-3xl font-black">Zainny Creations</h1>
       </div>  
       <ul className="flex gap-10 font-poppins text-xs">
         <li className="hover:text-gray-400"><a href="#">Collections <span>&#9662;</span></a></li>
