@@ -3,15 +3,15 @@ import dress from "../assets/dress01.jpg"
 
 export default function HeroSection() {
   return(
-    <div className="  py-10 px-20 rounded-4xl">
+    <div className="  py-10 px-20 bg-[#f8e3df]">
         <div className="flex items-center justify-between">
             <div className="max-w-xl space-y-6 ">
                 <div class="inline-flex items-center justify-center gap-2 bg-white text-gray-800 rounded-full px-4 py-1.5 shadow-sm">
-                <img 
-                src={staricon}
-                alt="star" 
-                className="w-8 h-8 object-contain" />
-                <span class="font-poppins text-xs">New Collection 2026</span>
+                    <img 
+                    src={staricon}
+                    alt="star" 
+                    className="w-8 h-8 object-contain" />
+                    <span class="font-poppins text-xs">New Collection 2026</span>
                 </div>
 
                 <div>

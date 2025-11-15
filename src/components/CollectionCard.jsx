@@ -5,7 +5,7 @@ import twopiece from "../assets/two-piece01.jpg"
 import FeaturedCollection from "../components/FeaturedCollection"
 export default function CollectionCard(){
     return(
-        <div className="">
+        <div className="bg-linear-to-r from-[#fdf4f2] to-[#faece8]">
             <div className=" flex flex-col justify-center items-center">
                 <h2 className="font-playfair font-bold mt-8 text-center">Featured Collections</h2>
                 <p className="font-poppins text-xs text-gray-500 mt-4 text-center">Discover styles curated to celebrate your grace and confidence</p>

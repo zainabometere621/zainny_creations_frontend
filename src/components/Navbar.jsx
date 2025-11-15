@@ -22,9 +22,9 @@ export default function Navbar() {
           />
         </span>
         <input
-          type="text"
+         type="text"
           placeholder="Search for outfits..."
-          className="pl-10 h-8 w-96 text-xs bg-[#f2f2f2] font-poppins border border-transparent rounded-2xl  focus:border-[#e79f93] focus:outline-none  transition-all duration-200"
+          className="pl-10 h-8 w-96 text-xs bg-gray-200 font-poppins border border-transparent rounded-2xl  focus:border-[#e79f93] focus:outline-none  transition-all duration-200"
         />
       </div>
       <div className="flex gap-2 items-center">
