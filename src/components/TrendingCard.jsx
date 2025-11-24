@@ -6,12 +6,12 @@ import TrendingNow from "../components/TrendingNow"
 
 export default function TrendingCard() {
     return(
-        <div className="bg-linear-to-r from-[#fdf4f2] to-[#faece8]">
+        <div className="bg-linear-to-r from-[#fdf4f2] to-[#faece8] pb-1 shadow-sm">
             <div className="flex flex-col justify-center items-center">
                 <h1 className="font-playfair font-bold mt-8 text-center">Trending Now</h1>
                 <p className="font-poppins text-xs text-gray-500 mt-4 text-center">Our season’s signature style pieces</p>
             </div>
-            <div className="flex gap-5 justify-center">
+            <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row flex-wrap gap-5 justify-center items-center">
                 <TrendingNow
                 
                     styles="Gowns"
@@ -57,5 +57,6 @@ export default function TrendingCard() {
                 </button>
             </div>
         </div>
+        
     )
 }

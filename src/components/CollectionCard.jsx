@@ -10,7 +10,7 @@ export default function CollectionCard(){
                 <h2 className="font-playfair font-bold mt-8 text-center">Featured Collections</h2>
                 <p className="font-poppins text-xs text-gray-500 mt-4 text-center">Discover styles curated to celebrate your grace and confidence</p>
             </div>
-            <div className="flex gap-5 justify-center">
+            <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row flex-wrap gap-5 justify-center items-center">
                 <FeaturedCollection
 
                     image={gown}
