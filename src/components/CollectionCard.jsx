@@ -1,46 +1,37 @@
-import gown from "../assets/gown01.jpg"
-import cooperate from "../assets/cooperate01.jpg"
-import casual from "../assets/casual01.jpg"
-import twopiece from "../assets/two-piece01.jpg"
-import FeaturedCollection from "../components/FeaturedCollection"
-export default function CollectionCard(){
-    return(
-        <div className="bg-linear-to-r from-[#fdf4f2] to-[#faece8]">
-            <div className=" flex flex-col justify-center items-center">
-                <h2 className="font-playfair font-bold mt-8 text-center">Featured Collections</h2>
-                <p className="font-poppins text-xs text-gray-500 mt-4 text-center">Discover styles curated to celebrate your grace and confidence</p>
-            </div>
-            <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row flex-wrap gap-5 justify-center items-center">
-                <FeaturedCollection
-
-                    image={gown}
-                    outfit="Gowns"
-                    styles="15+ Styles"
-
-                />
-                <FeaturedCollection
-
-                    image={cooperate}
-                    outfit="cooperate outfit"
-                    styles="10+ Styles"
-
-                />
-                <FeaturedCollection
-
-                    image={casual}
-                    outfit="casual outfit"
-                    styles="15+ Styles"
-
-                />
-                <FeaturedCollection
-
-                    image={twopiece}
-                    outfit="two piece"
-                    styles="15+ Styles"
-
-                />
-            </div>
-        </div>
-
-    )
+import gown from "../assets/gown01.jpg";
+import cooperate from "../assets/cooperate01.jpg";
+import casual from "../assets/casual01.jpg";
+import twopiece from "../assets/two-piece01.jpg";
+import FeaturedCollection from "../components/FeaturedCollection";
+export default function CollectionCard() {
+  return (
+    <div className="bg-linear-to-r from-[#fdf4f2] to-[#faece8]">
+      <div className=" flex flex-col justify-center items-center">
+        <h2 className="font-playfair font-black text-2xl mt-8 text-center">
+          Featured Collections
+        </h2>
+        <p className="font-poppins text-sm  text-gray-500 mt-4 text-center">
+          Discover styles curated to celebrate your grace and confidence
+        </p>
+      </div>
+      <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row flex-wrap gap-5 justify-center items-center">
+        <FeaturedCollection image={gown} outfit="Gowns" styles="15+ Styles" />
+        <FeaturedCollection
+          image={cooperate}
+          outfit="cooperate outfit"
+          styles="10+ Styles"
+        />
+        <FeaturedCollection
+          image={casual}
+          outfit="casual outfit"
+          styles="15+ Styles"
+        />
+        <FeaturedCollection
+          image={twopiece}
+          outfit="two piece"
+          styles="15+ Styles"
+        />
+      </div>
+    </div>
+  );
 }
