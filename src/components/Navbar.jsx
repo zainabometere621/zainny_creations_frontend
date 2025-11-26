@@ -1,5 +1,5 @@
+import { Search, ChevronDown, User,ShoppingCart} from "lucide-react";
 import { useState } from "react";
-import searchicon from "../assets/search-icon.png";
 import nairaicon from "../assets/naira-icon.png";
 import carticon from "../assets/cart-icon.png";
 import profileicon from "../assets/profile-icon.png";
@@ -15,25 +15,23 @@ export default function Navbar() {
       </p>
       {/* middle text */}
       <div className="hidden lg:flex space-x-8 items-center">
-        <NavLink to="/collections">Collections</NavLink>
+        <NavLink to="/collections" className="text-sm hover:text-[#D4AF37]">
+          Collections
+        </NavLink>
 
-        <NavLink to="/custom-orders">Custom Orders</NavLink>
+        <NavLink to="/custom-orders" className="text-sm hover:text-[#D4AF37]">
+          Custom Orders
+        </NavLink>
 
         {/* search bar section */}
-        <article className="relative w-max">
-          <span className="absolute inset-y-0 left-0 flex items-center pl-3">
-            <img
-              src={searchicon}
-              alt="search icon"
-              className="h-5 w-5 text-gray-400"
-            />
-          </span>
+        <div className=" flex items-center w-[300px] bg-gray-200 font-poppins rounded-2xl text-xs py-2 px-3 border border-gray-400 space-x-2 ">
+          <Search className="w-4 h-4 text-gray-500" />
           <input
             type="text"
             placeholder="Search for outfits..."
-            className="pl-10 h-8 w-96 text-xs bg-gray-200 font-poppins border border-transparent rounded-2xl  focus:border-[#e79f93] focus:outline-none  transition-all duration-200"
+            className="focus:outline-none flex-1 placeholder:text-xs"
           />
-        </article>
+        </div>
       </div>
       {/* end of middle section */}
       <div className="flex gap-2 items-center">
@@ -43,7 +41,6 @@ export default function Navbar() {
             alt="Naira icon"
             className="h-5 w-5 hover:opacity-6-0 "
           />
-          
         </div>
         <div>
           <img
@@ -87,9 +84,9 @@ export default function Navbar() {
             <a href="#">Custom Orders</a>
           </li>
           <div className="relative w-full">
-            <span className="absolute inset-y-0 left-0 flex items-center pl-3">
+            {/* <span className="absolute inset-y-0 left-0 flex items-center pl-3">
               <img src={searchicon} className="h-5 w-5" />
-            </span>
+            </span> */}
 
             <input
               type="text"
