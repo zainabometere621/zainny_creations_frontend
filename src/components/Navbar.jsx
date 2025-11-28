@@ -1,8 +1,6 @@
-import { Search, ChevronDown, User,ShoppingCart} from "lucide-react";
+import { Search, ChevronDown, User, ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import nairaicon from "../assets/naira-icon.png";
-import carticon from "../assets/cart-icon.png";
-import profileicon from "../assets/profile-icon.png";
 import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
@@ -15,10 +13,12 @@ export default function Navbar() {
       </p>
       {/* middle text */}
       <div className="hidden lg:flex space-x-8 items-center">
-        <NavLink to="/collections" className="text-sm hover:text-[#D4AF37]">
-          Collections
-        </NavLink>
-
+        <p className="flex items-center">
+          <NavLink to="/collections" className="text-sm hover:text-[#D4AF37]">
+            Collections
+          </NavLink>
+          <ChevronDown className="h-4 w-4 text-gray-600"/>
+        </p>
         <NavLink to="/custom-orders" className="text-sm hover:text-[#D4AF37]">
           Custom Orders
         </NavLink>
@@ -34,7 +34,7 @@ export default function Navbar() {
         </div>
       </div>
       {/* end of middle section */}
-      <div className="flex gap-2 items-center">
+      <div className="flex gap-4 items-center">
         <div className="flex items-center">
           <img
             src={nairaicon}
@@ -42,20 +42,10 @@ export default function Navbar() {
             className="h-5 w-5 hover:opacity-6-0 "
           />
         </div>
-        <div>
-          <img
-            src={carticon}
-            alt="Cart icon"
-            className="h-10 w-10 hover:opacity-60 "
-          />
-        </div>
-        <div>
-          <img
-            src={profileicon}
-            alt="Profile icon"
-            className="h-8 w-8 hover:opacity-60 transition duration-200"
-          />
-        </div>
+
+        <ShoppingCart className="h-6 w-6 " />
+
+        <User className="h-6 w-6 " />
       </div>
 
       {/* end of midlle section */}
