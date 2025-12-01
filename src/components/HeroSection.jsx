@@ -1,5 +1,5 @@
 import dress from "../assets/dress01.jpg";
-import { Star } from "lucide-react";
+import { Star, ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -12,21 +12,23 @@ export default function HeroSection() {
             <span class="font-poppins text-xs">New Collection 2026</span>
           </div>
 
-          <div>
+          <div className="max-w-md mx-auto">
             <h1 className="font-playfair font-bold text-black text-2xl md:text-5xl lg:text-5xl  leading-snug">
-              A Perfect of Style, Comfort and{" "}
-              <span className="text-[#D4AF37]">Confidence</span>
+              A Perfect blend of Style, Comfort and
+              <span className="text-[#D4AF37]"> Confidence</span>
             </h1>
-            <p className=" font-poppins text-sm text-gray-500 mt-3">
+            <p className="font-poppins text-sm text-gray-700 mt-3 max-w-sm">
               Embrace modest fashion that blends elegance, comfort, and timeless
               confidence.
             </p>
           </div>
-          <div className="flex gap-10 pt-4 md:flex md:items-center md:justify-center mb-10 md:mb-10">
-            <button className=" lg:h-10 h-12 lg:px-10 px-12 bg-[#D4AF37] rounded-3xl  text-xs md:text-sm lg:text-sm font-poppins text-white animate-bounce">
-              Shop Now &rarr;
+          <div className="flex gap-2 pt-4 items-center mb-10">
+            <button className="flex items-center gap-1 px-6 md:px-8 lg:px-10 py-2 bg-[#D4AF37] rounded-3xl text-xs md:text-sm lg:text-sm font-poppins text-white whitespace-nowrap">
+              Shop Now
+              <ArrowRight className="h-3 w-3" />
             </button>
-            <button className=" lg:h-10 h-12 lg:px-12 px-14 bg-white border border-[#D4AF37] rounded-3xl text-black text-xs md:text-sm lg:text-sm font-poppins">
+
+            <button className="px-6 md:px-8 lg:px-10 py-2 hover:border  hover:border-gray-700 rounded-3xl text-black text-xs md:text-sm lg:text-sm font-poppins whitespace-nowrap">
               Custom Orders
             </button>
           </div>

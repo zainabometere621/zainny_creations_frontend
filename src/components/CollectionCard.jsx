@@ -14,7 +14,7 @@ export default function CollectionCard() {
           Discover styles curated to celebrate your grace and confidence
         </p>
       </div>
-      <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row flex-wrap gap-5 justify-center items-center">
+      <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row flex-wrap gap-5 justify-center items-center shadow-md">
         <FeaturedCollection image={gown} outfit="Gowns" styles="15+ Styles" />
         <FeaturedCollection
           image={cooperate}

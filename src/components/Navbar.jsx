@@ -34,7 +34,7 @@ export default function Navbar() {
         </div>
       </div>
       {/* end of middle section */}
-      <div className="flex gap-4 items-center">
+      <div className=" hidden lg:flex gap-4 items-center">
         <div className="flex items-center">
           <img
             src={nairaicon}
